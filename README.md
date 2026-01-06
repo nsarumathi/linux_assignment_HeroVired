@@ -56,13 +56,14 @@ Challenges Faced During Implementation:
   1.Issue:While installing htop and nmon using the yum install command, the installation failed because the packages were not available or supported through yum.
     <img width="1327" height="836" alt="Task1 2" src="https://github.com/user-attachments/assets/073414e5-2547-4ae7-99a8-68cba09c87ac" />
     
-    Resolution:Switched to the dnf package manager and successfully installed the tools using:dnf install htop
+  Resolution:Switched to the dnf package manager and successfully installed the tools using:dnf install htop
 
   2.Issue:While installing and configuring the Apache server, the Apache service failed to start. This occurred because both Apache and Nginx were trying to use Port 80, causing a port conflict.
   
-    <img width="1372" height="550" alt="Task3" src="https://github.com/user-attachments/assets/7e5f4b00-64a5-48f9-8518-82fe48b02fb5" />
+  <img width="1372" height="550" alt="Task3" src="https://github.com/user-attachments/assets/7e5f4b00-64a5-48f9-8518-82fe48b02fb5" />
     
-    Resolution:Apache listening port was changed from Port 80 to Port 8080 in the configuration file. After updating the port and restarting the service, Apache started successfully while Nginx continued running on Port 80.
+  Resolution:Apache listening port was changed from Port 80 to Port 8080 in the configuration file. After updating the port and restarting the service, Apache started successfully while Nginx continued running on Port 80.
+  
    Apache Server:
     <img width="1298" height="372" alt="Task3 4ap" src="https://github.com/user-attachments/assets/1b627b44-517b-4843-a5d7-7599d864e25d" />
 
